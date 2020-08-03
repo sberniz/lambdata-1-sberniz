@@ -46,5 +46,5 @@ def list_to_column(list,col_name,df):
       """
       X = df.copy()
       list_to_series = pd.Series(data=list)
-      df[col_name] = list_to_series
+      X[col_name] = list_to_series
       return X
