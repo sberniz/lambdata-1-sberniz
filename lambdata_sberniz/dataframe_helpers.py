@@ -36,3 +36,15 @@ def auto_date_convert(df):
               if(result):
                   X[item] = pd.to_datetime(X[item],infer_datetime_format=True)
       return X
+
+
+def list_to_column(list,col_name,df):
+
+      """
+      Takes a list and adds to a column in dataframe, user must provide
+      list,column Name (col_name) and dataframe
+      """
+      X = df.copy()
+      list_to_series = pd.Series(data=list)
+      df[col_name] = list_to_series
+      return X
