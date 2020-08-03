@@ -6,8 +6,7 @@ import setuptools
 
 REQUIRED = [
         "numpy",
-        "pandas",
-        "re"
+        "pandas"
         ]
 
 with open("README.md","r") as file:
