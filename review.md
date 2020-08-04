@@ -15,3 +15,11 @@ That way each elements explanation is split
 # Version
 
 Maybe you can find a way to read the pipfile to get version that's be cool
+
+# Classes
+
+Your class is fine since they told us to make one. Again it just doesn't make sense to have a class in this case but what can you do. 
+
+# Score 
+
+2 for sure i dont really know what a 3 for this assignment would look like but good job
