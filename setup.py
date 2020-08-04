@@ -15,7 +15,7 @@ with open("README.md","r") as file:
 
 setuptools.setup(
    name="lambdata-sberniz",
-   version= "0.1.1",
+   version= "0.1.2",
    author="sberniz",
    description="a collection of data science helper functions",
    long_description=LONG_DESCRIPTION,

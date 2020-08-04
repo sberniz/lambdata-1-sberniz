@@ -1,6 +1,14 @@
 # lambdata-1-sberniz
 
-Project Repomod 1
+Version 0.1.2
+Converted Functions to classes and methods
+Usage: 
+df = df_manage(df)
+df.date_convert()
+df.split_date()
+df.senddf()
+
+Project Repo Unit 3 Sprint 1, Module 2
 
 Simple pip Package, test package 
 
