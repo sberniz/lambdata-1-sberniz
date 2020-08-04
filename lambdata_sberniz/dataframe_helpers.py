@@ -48,3 +48,11 @@ def list_to_column(list,col_name,df):
       list_to_series = pd.Series(data=list)
       X[col_name] = list_to_series
       return X
+
+def version():
+    """
+    Print Version of package
+    """
+
+    print("Version 0.11")
+

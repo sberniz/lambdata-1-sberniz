@@ -15,10 +15,10 @@ with open("README.md","r") as file:
 
 setuptools.setup(
    name="lambdata-sberniz",
-   version= "0.1.0",
+   version= "0.1.1",
    author="sberniz",
    description="a collection of data science helper functions",
-   long_desription=LONG_DESCRIPTION,
+   long_description=LONG_DESCRIPTION,
    long_description_content_type="text/markdown",
    url="https://github.com/sberniz/lambdata-1-sberniz/",
    packages=setuptools.find_packages(),
