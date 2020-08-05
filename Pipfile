@@ -7,6 +7,8 @@ name = "pypi"
 pandas = "*"
 numpy = "*"
 regex = "*"
+scipy = "*"
+scikit-learn = "*"
 
 [dev-packages]
 twine = "*"
