@@ -4,13 +4,20 @@ import re
 
 
 class df_manager:
-    """DataFrame Mini Manager"""
+    """
+    DataFrame Mini Manager
+    Converts all date objects to datetime,
+    splits all datetime objects to month/day/year
+    sends dataframe back to a dataframe with senddf()
+    """
     def __init__(self, df):
         self.df = df
 
     def date_convert(self):
         """Convert dates to date object"""
+        # Pattern to detect datetime object in yyyy-mm-dd
         pattern = '([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))'
+        # Search through all the columns to convert it to datetime
         for item in self.df:
             if(self.df[item].dtypes == 'O'):
                 result = re.match(pattern, self.df[item][0])
@@ -19,7 +26,7 @@ class df_manager:
                         self.df[item], infer_datetime_format=True)
 
     def split_date(self):
-        """Split Date into month/day/year"""
+        """Split Date into month/day/year columns"""
         for item in self.df:
             if self.df[item].dtypes == '<M8[ns]':
                 self.df[item+'_month'] = self.df[item].dt.month
@@ -27,7 +34,7 @@ class df_manager:
                 self.df[item+'_year'] = self.df[item].dt.year
 
     def senddf(self):
-        """Sends back the df to variable"""
+        """Sends back the df to a dataframe variable"""
         return self.df
 
     def __repr__(self):
