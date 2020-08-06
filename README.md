@@ -1,14 +1,14 @@
 # lambdata-1-sberniz
 
-Version 0.1.3 - Latest
+# Version 0.1.3 - Latest
 
 Added Unit Tests file tester.py
 
-Version 0.1.2
+# Version 0.1.2
 
 Converted Functions to classes and methods
 
-Usage:
+# Usage:
 
 Import a dataframe, and then intantiate a df_manager class as follow:
  
